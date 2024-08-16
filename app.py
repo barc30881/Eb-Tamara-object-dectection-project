@@ -23,6 +23,14 @@ st.title("EB-TAMARA Object Detection And Tracking using YOLOv8")
 # Sidebar
 st.sidebar.header("ML Model Config")
 
+hide_st_style = """
+                <style>
+                #MainMenu{visibility:hidden;}
+                footer {visibility:hidden;}
+                </style>
+                """
+st.markdown(hide_st_style,unsafe_allow_html=True)
+
 # Model Options
 model_type = st.sidebar.radio(
     "Select Task", ['Detection', 'Segmentation'])
@@ -108,3 +116,4 @@ elif source_radio == settings.YOUTUBE:
 
 else:
     st.error("Please select a valid source type!")
+
