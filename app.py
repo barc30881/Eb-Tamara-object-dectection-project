@@ -28,6 +28,15 @@ hide_st_style = """
                 #MainMenu{visibility:hidden;}
                 footer {visibility:hidden;}
                 .styles_terminalButton__JBj5T{visibility:hidden;}
+                footer:after{ 
+                content : "@ 2024 Software Code Institute";
+                display:block;
+                position :relative;
+                color:tomato;
+                padding :5px;
+                top :3px
+                }
+
                 </style>
                 """
 st.markdown(hide_st_style,unsafe_allow_html=True)
