@@ -34,7 +34,7 @@ hide_st_style = """
                 position :relative;
                 color:tomato;
                 padding :5px;
-                top :3px
+                top :3px;
                 }
 
                 </style>
